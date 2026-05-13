@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 40px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 0.5px solid #eee;
+
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+
+  font-size: 1.5rem;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+
+  font-weight: 550;
+
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #000;
+}
