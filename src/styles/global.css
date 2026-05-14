@@ -156,7 +156,8 @@ body {
    HERO
 ========================= */
 
-.grid-sobre {
+/*.grid-sobre {
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     gap: 40px;
@@ -184,7 +185,7 @@ body {
     max-width: 300px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
+}*/
 
 /* =========================
    SKILLS

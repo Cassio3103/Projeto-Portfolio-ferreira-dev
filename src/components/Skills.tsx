@@ -10,9 +10,9 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiDjango,
+  //SiDjango,
   SiGooglecloud,
-  SiJira,
+  //SiJira,
   SiMysql,
   SiPostgresql,
   SiReact,
@@ -39,11 +39,11 @@ interface TechTrackStyle extends CSSProperties {
 export default function Skills() {
   const stack: GrupoStack[] = [
     {
-      categoria: "Linguagens",
+      categoria: "Linguagens e Frameworks",
       descricao: "Base principal para backend, APIs e interfaces web.",
       tecnologias: [
         { nome: "Python", icon: <FaPython color="#3776ab" /> },
-        { nome: "Django", icon: <SiDjango color="#092e20" /> },
+        //{ nome: "Django", icon: <SiDjango color="#092e20" /> },
         { nome: "Java", icon: <FaJava color="#007396" /> },
         { nome: "Spring Boot", icon: <SiSpringboot color="#6db33f" /> },
         { nome: "JavaScript", icon: <FaJs color="#f7df1e" /> },
@@ -66,7 +66,7 @@ export default function Skills() {
         { nome: "Docker", icon: <FaDocker color="#2496ed" /> },
         { nome: "GCP", icon: <SiGooglecloud color="#4285f4" /> },
         { nome: "Git/GitHub", icon: <FaGitAlt color="#f05032" /> },
-        { nome: "Jira", icon: <SiJira color="#0052cc" /> },
+        //{ nome: "Jira", icon: <SiJira color="#0052cc" /> },
       ],
     },
   ];

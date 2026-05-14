@@ -13,7 +13,7 @@
   background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
 
-  border-bottom: 0.5px solid #eee;
+  border-bottom: 0.5px solid #b300ff;
 
   z-index: 1000;
 }
@@ -22,7 +22,7 @@
   display: flex;
   list-style: none;
 
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   gap: 20px;
 }
 
@@ -30,11 +30,11 @@
   text-decoration: none;
   color: #000000;
 
-  font-weight: 550;
+  font-weight: 500;
 
   transition: 0.2s;
 }
 
 .navbar a:hover {
-  color: #000;
+  color: #ba7aff;
 }

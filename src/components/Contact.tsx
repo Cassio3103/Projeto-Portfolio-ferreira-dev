@@ -5,7 +5,7 @@ import type { CSSProperties } from "react";
 export default function Contact() {
   const contatos = [
     { nome: "LinkedIn", icon: <FaLinkedin />, link: "", color: "#0077b5" },
-    { nome: "GitHub", icon: <FaGithub />, link: "", color: "#333" },
+    { nome: "GitHub", icon: <FaGithub />, link: "https://github.com/Cassio3103", color: "#333" },
     { nome: "E-mail", icon: <FaEnvelope />, link: "mailto:", color: "#ea4335" },
     { nome: "WhatsApp", icon: <FaWhatsapp />, link: "https://wa.me/55849", color: "#25d366" }
   ];

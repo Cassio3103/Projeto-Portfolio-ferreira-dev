@@ -7,6 +7,7 @@ export function Navbar() {
     <Logo />
     
     <ul> 
+      <li> <a href="#home">Home</a></li>
       <li> <a href="#sobre">Sobre mim</a> </li> 
       <li> <a href="#tecnologias">Tecnologias</a> </li>
       <li> <a href="#projetos">Projetos</a> </li> 
