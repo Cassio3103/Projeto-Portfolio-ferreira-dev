@@ -18,7 +18,7 @@ export default function Home() {
         </RevealOnScroll>
 
         <RevealOnScroll className="foto-perfil" delay={160}>
-          <img src="/img/me.jpeg" alt="Cássio Ferreira" />
+          <img src="img/me.jpg" alt="Cássio Ferreira" />
         </RevealOnScroll>
       </div>
     </section>

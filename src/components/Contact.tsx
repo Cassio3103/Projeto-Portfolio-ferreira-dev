@@ -4,10 +4,10 @@ import type { CSSProperties } from "react";
 
 export default function Contact() {
   const contatos = [
-    { nome: "LinkedIn", icon: <FaLinkedin />, link: "", color: "#0077b5" },
+    { nome: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/c%C3%A1ssio-ferreira-3003a5387/", color: "#0077b5" },
     { nome: "GitHub", icon: <FaGithub />, link: "https://github.com/Cassio3103", color: "#333" },
-    { nome: "E-mail", icon: <FaEnvelope />, link: "mailto:", color: "#ea4335" },
-    { nome: "WhatsApp", icon: <FaWhatsapp />, link: "https://wa.me/55849", color: "#25d366" }
+    { nome: "E-mail", icon: <FaEnvelope />, link: "mailto:cassiofelipepaiva@gmail.com", color: "#ea4335" },
+    { nome: "WhatsApp", icon: <FaWhatsapp />, link: "https://wa.me/5584999706521", color: "#25d366" }
   ];
 
   return (

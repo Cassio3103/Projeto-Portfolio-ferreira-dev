@@ -6,7 +6,7 @@ import {
   FaJava,
   FaJs,
   FaPython,
-  FaTerminal,
+  //FaTerminal,
 } from "react-icons/fa";
 
 import {
@@ -48,7 +48,7 @@ export default function Skills() {
         { nome: "Spring Boot", icon: <SiSpringboot color="#6db33f" /> },
         { nome: "JavaScript", icon: <FaJs color="#f7df1e" /> },
         { nome: "React", icon: <SiReact color="#61dafb" /> },
-        { nome: "C/C++", icon: <FaTerminal color="#64748b" /> },
+        //{ nome: "C/C++", icon: <FaTerminal color="#64748b" /> },
       ],
     },
     {
