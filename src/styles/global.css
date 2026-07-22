@@ -207,14 +207,51 @@ body {
 }
 
 .tech-carousel {
+    position: relative;
+
     width: 100%;
     overflow: hidden;
+
     padding: 0.75rem 0;
-    mask-image: linear-gradient(
-        90deg,
-        transparent,
-        #000 12%,
-        #000 88%,
+}
+
+
+/* Efeito de fade nas laterais */
+.tech-carousel::before,
+.tech-carousel::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+
+    width: 80px;
+    height: 100%;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* Lado esquerdo */
+.tech-carousel::before {
+    left: 0;
+
+    background: linear-gradient(
+        to right,
+        var(--section-bg),
+        transparent
+    );
+}
+
+
+/* Lado direito */
+.tech-carousel::after {
+    right: 0;
+
+    background: linear-gradient(
+        to left,
+        var(--section-bg),
         transparent
     );
 }
@@ -553,3 +590,4 @@ footer {
 .bg-dark .contact-container p {
     color: var(--dark-section-text);
 }
+

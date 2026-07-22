@@ -6,13 +6,10 @@ import {
   FaJava,
   FaJs,
   FaPython,
-  //FaTerminal,
 } from "react-icons/fa";
 
 import {
-  //SiDjango,
   SiGooglecloud,
-  //SiJira,
   SiMysql,
   SiPostgresql,
   SiReact,
@@ -20,6 +17,7 @@ import {
 } from "react-icons/si";
 
 import RevealOnScroll from "./RevealOnScroll";
+import { useLanguage } from "./LanguageContext";
 
 interface Tecnologia {
   nome: string;
@@ -37,36 +35,35 @@ interface TechTrackStyle extends CSSProperties {
 }
 
 export default function Skills() {
+  const { t } = useLanguage();
+
   const stack: GrupoStack[] = [
     {
-      categoria: "Linguagens e Frameworks",
-      descricao: "Base principal para backend, APIs e interfaces web.",
+      categoria: t.skills.categories.languages,
+      descricao: t.skills.descriptions.languages,
       tecnologias: [
         { nome: "Python", icon: <FaPython color="#3776ab" /> },
-        //{ nome: "Django", icon: <SiDjango color="#092e20" /> },
         { nome: "Java", icon: <FaJava color="#007396" /> },
         { nome: "Spring Boot", icon: <SiSpringboot color="#6db33f" /> },
         { nome: "JavaScript", icon: <FaJs color="#f7df1e" /> },
         { nome: "React", icon: <SiReact color="#61dafb" /> },
-        //{ nome: "C/C++", icon: <FaTerminal color="#64748b" /> },
       ],
     },
     {
-      categoria: "Bancos",
-      descricao: "Persistência e modelagem para sistemas de gestão.",
+      categoria: t.skills.categories.databases,
+      descricao: t.skills.descriptions.databases,
       tecnologias: [
         { nome: "MySQL", icon: <SiMysql color="#4479a1" /> },
         { nome: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
       ],
     },
     {
-      categoria: "Ferramentas",
-      descricao: "Fluxo de versionamento, cloud e organização de entregas.",
+      categoria: t.skills.categories.tools,
+      descricao: t.skills.descriptions.tools,
       tecnologias: [
         { nome: "Docker", icon: <FaDocker color="#2496ed" /> },
         { nome: "GCP", icon: <SiGooglecloud color="#4285f4" /> },
         { nome: "Git/GitHub", icon: <FaGitAlt color="#f05032" /> },
-        //{ nome: "Jira", icon: <SiJira color="#0052cc" /> },
       ],
     },
   ];
@@ -75,16 +72,14 @@ export default function Skills() {
     <section id="tecnologias" className="full-page bg-light">
       <div className="container">
         <RevealOnScroll className="section-heading">
-          <h1 className="dark-title">Tecnologias</h1>
-          <p>
-            Stacks que uso para construir projetos web, APIs e soluções de
-            backend.
-          </p>
+          <h1 className="dark-title">{t.skills.title}</h1>
+
+          <p>{t.skills.subtitle}</p>
         </RevealOnScroll>
 
         <div className="skills-carousel-stack">
           {stack.map((grupo, grupoIndex) => {
-            const loopTecnologias: Tecnologia[] = [
+            const loopTecnologias = [
               ...grupo.tecnologias,
               ...grupo.tecnologias,
               ...grupo.tecnologias,
@@ -103,7 +98,7 @@ export default function Skills() {
 
                 <div
                   className="tech-carousel"
-                  aria-label={`Carrossel de ${grupo.categoria}`}
+                  aria-label={`${t.skills.carouselLabel} ${grupo.categoria}`}
                 >
                   <div
                     className={`tech-track ${
