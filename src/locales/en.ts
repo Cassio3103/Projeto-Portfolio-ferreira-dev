@@ -19,17 +19,77 @@ export const en = {
 },
 
   about: {
-    title: "About Me",
+  title: "About Me",
 
-    paragraph1:
-      "I am a developer focused on building robust and scalable systems. I am currently pursuing a Bachelor's degree in Information Technology at the Digital Metropolis Institute - Federal University of Rio Grande do Norte (IMD-UFRN), where I deepen my knowledge of software architecture and algorithms. I also hold a technical degree in Mechatronics from the Federal Institute of Rio Grande do Norte (IFRN), where I had my first practical contact with programming and built a solid foundation in the field.",
+  paragraph1: {
+    start:
+      "I am a developer focused on building robust and scalable systems. I am currently pursuing a Bachelor's degree in Information Technology at ",
 
-    paragraph2:
-      "I currently work as a Freelancer, developing Back-End systems using technologies I specialize in, such as Java and Spring Boot.",
+    highlight1:
+      "Digital Metropolis Institute - Federal University of Rio Grande do Norte (IMD-UFRN)",
 
-    paragraph3:
-      "In addition, I am expanding my stack toward microservices using Go, while also exploring infrastructure technologies such as Docker and Google Cloud Platform (GCP). My goal is to combine the agility of modern web development with the reliability of well-established Back-End architectures.",
+    middle:
+      ", where I deepen my knowledge of software architecture and algorithms. I also hold a technical degree in Mechatronics from ",
+
+    highlight2:
+      "Federal Institute of Rio Grande do Norte (IFRN)",
+
+    end:
+      ", where I had my first practical contact with programming and built a solid foundation in the field.",
   },
+
+  paragraph2: {
+    start:
+      "I currently work as a ",
+
+    highlight1:
+      "Freelancer",
+
+    middle:
+      ", developing ",
+
+    highlight2:
+      "Back-End",
+
+    end:
+      " systems using technologies I specialize in, such as ",
+
+    highlight3:
+      "Java and Spring Boot",
+
+    finish:
+      ".",
+  },
+
+  paragraph3: {
+    start:
+      "In addition, I am expanding my stack toward microservices using ",
+
+    highlight1:
+      "Go",
+
+    middle:
+      ", while also exploring infrastructure technologies such as ",
+
+    highlight2:
+      "Docker",
+
+    middle2:
+      " and ",
+
+    highlight3:
+      "Google Cloud Platform (GCP)",
+
+    end:
+      ". My goal is to combine the agility of modern web development with the reliability of well-established ",
+
+    highlight4:
+      "Back-End",
+
+    finish:
+      " architectures.",
+  },
+},
 
   skills: {
   title: "Technologies",

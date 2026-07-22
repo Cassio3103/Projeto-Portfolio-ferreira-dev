@@ -17,19 +17,78 @@ export const pt = {
   description:
     "Desenvolvedor focado em criar aplicações modernas, performáticas e escaláveis.",
 },
-  about: {
+about: {
   title: "Sobre Mim",
 
-  paragraph1:
-    "Sou um desenvolvedor focado na construção de sistemas robustos e escaláveis. Atualmente, curso o Bacharelado em Tecnologia da Informação no Instituto Metrópole Digital - Universidade Federal do Rio Grande do Norte (IMD-UFRN), onde aprofundo meus conhecimentos em arquitetura de software e algoritmos. Também possuo ensino técnico em Mecatrônica pelo Instituto Federal do Rio Grande do Norte (IFRN), onde tive meu primeiro contato prático com programação e desenvolvi uma base sólida na área.",
+  paragraph1: {
+    start:
+      "Sou um desenvolvedor focado na construção de sistemas robustos e escaláveis. Atualmente, curso o Bacharelado em Tecnologia da Informação no ",
 
-  paragraph2:
-    "Atualmente atuo como Freelancer, desenvolvendo sistemas Back-End utilizando linguagens e frameworks que domino, como Java e Spring Boot.",
+    highlight1:
+      "Instituto Metrópole Digital - Universidade Federal do Rio Grande do Norte (IMD-UFRN)",
 
-  paragraph3:
-    "Além disso, estou expandindo meu stack para soluções baseadas em microsserviços utilizando Go, além de explorar tecnologias de infraestrutura como Docker e Google Cloud Platform (GCP). Meu objetivo é unir a agilidade do desenvolvimento web moderno com a segurança de arquiteturas Back-End consolidadas.",
+    middle:
+      ", onde aprofundo meus conhecimentos em arquitetura de software e algoritmos. Também possuo ensino técnico em Mecatrônica pelo ",
+
+    highlight2:
+      "Instituto Federal do Rio Grande do Norte (IFRN)",
+
+    end:
+      ", onde tive meu primeiro contato prático com programação e desenvolvi uma base sólida na área.",
+  },
+
+  paragraph2: {
+    start:
+      "Atualmente atuo como ",
+
+    highlight1:
+      "Freelancer",
+
+    middle:
+      ", desenvolvendo sistemas ",
+
+    highlight2:
+      "Back-End",
+
+    end:
+      " utilizando linguagens e frameworks que domino, como ",
+
+    highlight3:
+      "Java e Spring Boot",
+
+    finish:
+      ".",
+  },
+
+  paragraph3: {
+    start:
+      "Além disso, estou expandindo meu stack para soluções baseadas em microsserviços utilizando ",
+
+    highlight1:
+      "Go",
+
+    middle:
+      ", além de explorar tecnologias de infraestrutura como ",
+
+    highlight2:
+      "Docker",
+
+    middle2:
+      " e ",
+
+    highlight3:
+      "Google Cloud Platform (GCP)",
+
+    end:
+      ". Meu objetivo é unir a agilidade do desenvolvimento web moderno com a segurança de arquiteturas ",
+
+    highlight4:
+      "Back-End",
+
+    finish:
+      " consolidadas.",
+  },
 },
-
 skills: {
   title: "Tecnologias",
 
