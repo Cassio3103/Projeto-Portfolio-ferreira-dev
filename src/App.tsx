@@ -1,7 +1,7 @@
 import { Navbar } from "./components/NavBar";
 import Hero from "./components/Hero";
 import Skills from './components/Skills'; 
-import Projects from "./components/Projects";
+import Projects2 from "./components/Projects2";
 import Contact from "./components/Contact";
 import Home from "./components/Home"
 
@@ -14,7 +14,7 @@ function App() {
         <Home />
         <Hero />
         <Skills /> 
-        <Projects />
+        <Projects2 />
         <Contact />
       </main>
 

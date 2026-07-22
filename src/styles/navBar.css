@@ -1,40 +1,168 @@
+/* ========================= */
+/* Navbar                    */
+/* ========================= */
+
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 20px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 40px 40px;
+  background: var(--navbar-bg);
+  border-bottom: .5px solid var(--accent);
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
-
-  border-bottom: 0.5px solid #b300ff;
 
   z-index: 1000;
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
+/* Grupo de ações */
 
-  font-size: 1.2rem;
-  gap: 20px;
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-left: 30px;
 }
 
-.navbar a {
+/* ========================= */
+/* Links                     */
+/* ========================= */
+
+.nav-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  font-size: 1.2rem;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #000000;
+  color: var(--navbar-text);
 
   font-weight: 500;
 
-  transition: 0.2s;
+  transition: color .2s ease;
 }
 
-.navbar a:hover {
-  color: #ba7aff;
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ========================= */
+/* Theme Toggle              */
+/* ========================= */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+  color: var(--navbar-text);
+
+  cursor: pointer;
+
+  font-size: 1.4rem;
+
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(0,0,0,.08);
+}
+
+/* ========================= */
+/* Botão Menu                */
+/* ========================= */
+
+.menu-button {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 2rem;
+
+  color: var(--navbar-text);
+}
+
+/* ========================= */
+/* Mobile                    */
+/* ========================= */
+
+@media (max-width:768px){
+
+  .navbar{
+    padding:18px 24px;
+  }
+
+  .nav-links a {
+    color: var(--navbar-text);
+  }
+
+  .nav-links {
+    background: var(--navbar-bg);
+  }
+
+  .nav-links a {
+    color: var(--navbar-text);
+  }
+
+  .menu-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:1002;
+  }
+
+  .nav-links{
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+
+    gap: 20px;
+
+    font-size: 1.2rem;
+  }
+
+  .nav-links.active{
+    transform:translateX(0);
+  }
+
+  .nav-links a{
+    font-size:1.15rem;
+  }
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }

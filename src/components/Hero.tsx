@@ -12,11 +12,11 @@ function Hero() {
           </p>
 
           <p>
-            Atualmente atuo como <strong>Freelancer</strong>, desenvolvendo sistemas BackEnd usando linguagens de programação e frameworks que domino, como o Java e o Spring Boot.
+            Atualmente atuo como <strong>Freelancer</strong>, desenvolvendo sistemas Back-End usando linguagens de programação e frameworks que domino, como o Java e o Spring Boot.
           </p>
 
           <p>
-            Além disso, estou expandindo meu stack para soluções de microsserviços com linguagem <strong>GoLang</strong>, além de explorar tecnologias de infraestrutura como <strong>Docker e Google Cloud Platform (GCP)</strong>. Meu objetivo é unir a agilidade do desenvolvimento web moderno com a segurança de arquiteturas backend consolidadas.
+            Além disso, estou expandindo meu stack para soluções de microsserviços com linguagem <strong>GoLang</strong>, além de explorar tecnologias de infraestrutura como <strong>Docker e Google Cloud Platform (GCP)</strong>. Meu objetivo é unir a agilidade do desenvolvimento web moderno com a segurança de arquiteturas Back-End consolidadas.
           </p>
         </RevealOnScroll>
       </div>

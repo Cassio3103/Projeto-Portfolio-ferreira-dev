@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="container contact-container">
         <RevealOnScroll>
           <h1>Vamos construir algo juntos?</h1>
-          <p>Estou disponível para novos desafios em Backend e parcerias em projetos Open Source.</p>
+          <p>Estou disponível para novos desafios em Back-End e parcerias em projetos Open Source.</p>
         </RevealOnScroll>
 
         <div className="social-links">
