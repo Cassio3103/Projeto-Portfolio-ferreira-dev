@@ -121,10 +121,7 @@ body {
 
 .bg-dark {
     background-color: var(--dark-section-bg);
-    background-image: url("/img/main-bg.svg");
-    background-size: cover;
-    background-position: center;
-    color: var(--dark-section-text);
+  color: var(--dark-section-text);
 }
 
 .bg-dark h1,
